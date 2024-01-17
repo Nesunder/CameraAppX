@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageButton
+        android:id="@+id/capture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/capture"
+        android:scaleType="centerCrop"
+        android:src="@drawable/round_camera_24"
+        app:tint="#fff"
+        />
+
+    <ImageButton
+        android:id="@+id/toggleFlash"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_flash_on_24"
+        app:tint="#fff"
+        android:scaleType="centerCrop"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/toggle_flash"
+        />
+
+    <ImageButton
+        android:id="@+id/flipCamera"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/toggleFlash"
+        android:layout_marginEnd="16dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/round_flip_camera_android_24"
+        app:tint="#fff"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/flip_camera"
+        />
+
+</RelativeLayout>
